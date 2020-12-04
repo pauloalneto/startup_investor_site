@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', () => {
     return gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss', 
                      'src/assets/scss/*.scss'])
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass())
         .pipe(gulp.dest('src/assets/css'))
         .pipe(browserSync.stream());
 });
@@ -14,7 +14,7 @@ gulp.task('sass', () => {
 //Move arquivo JS para pasta de assets
 gulp.task('js', () => {
     return gulp.src(['./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 
-        './node_modules/jquery/dist/jquery.min.js'])
+        './node_modules/jquery/dist/jquery.min.js', 'src/assets/js/*.js'])
         .pipe(gulp.dest('src/assets/js'))
         .pipe(browserSync.stream());
 });
@@ -26,8 +26,8 @@ gulp.task('serve', gulp.series(['sass', 'js'], function() {
         server: "./src"
     });
 
-    gulp.watch('src/assets/scss/*.scss', gulp.series('sass'));
-    gulp.watch("src/assets/js/*.js", gulp.series('js'));
+    gulp.watch('src/assets/scss/*.scss', gulp.series(['sass']));
+    gulp.watch("src/assets/js/*.js", gulp.series(['js']));
     gulp.watch('src/*.html').on('change', browserSync.reload);
 }));
 
