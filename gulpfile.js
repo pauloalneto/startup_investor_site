@@ -36,7 +36,7 @@ gulp.task('serve', gulp.series(['sass', 'js', 'icons'], function() {
 
     gulp.watch('src/assets/scss/*.scss', gulp.series(['sass']));
     gulp.watch("src/assets/webfonts/*", gulp.series(['icons']));
-    gulp.watch("src/assets/js/*.js", gulp.series(['js']));
+    gulp.watch("src/assets/js/*.js").on('change', browserSync.reload);
     gulp.watch('src/*.html').on('change', browserSync.reload);
 }));
 
