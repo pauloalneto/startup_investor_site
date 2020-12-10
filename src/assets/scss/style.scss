@@ -1,6 +1,19 @@
+nav{
+    z-index: 1;
+}
 
+.header{
+    &-fixed-in{
+        background-color: orange;
+        transition: background-color 1s linear;
+    }
+    &-fixed-out{
+        background-color: transparent;
+        transition: background-color 1s linear;      
+    }
+}
 
-.jumbotron-fluid{
-    margin-top: -56px;
-    padding-top: 80px;
+.jumbotron{
+    height: 100vh;
+    padding: 10px;
 }
