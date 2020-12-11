@@ -32,13 +32,16 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Plataforma</a>
+              <a class="nav-link active" aria-current="page" href="#sectionAbout">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destaques</a>
+              <a class="nav-link" href="#sectionPlatform">Plataforma</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tenho Interesse</a>
+              <a class="nav-link" href="#sectionHighlights">Destaques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sectionInterest">Tenho Interesse</a>
             </li>
           </ul>
         </div>
@@ -49,102 +52,180 @@
   <!-- Content -->
   <main>
     <div class="jumbotron">
-        <div class="position-absolute end-0 top-0">
-          <img alt=""
-            src="https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg">
-        </div>
-        <div class="position-absolute top-50 start-0 translate-middle-y">
-          <h2>PLATAFORMA IGUIDE</h2>
-          <h4>Tenha as Melhores analises de ações em uma únida plataforma</h4>
-        </div>
-        <div class="position-absolute bottom-0 start-50 mb-5">
-          <span class="fa fa-chevron-down"></span>
-        </div>
+      <div class="position-absolute end-0 top-0">
+        <img alt="" src="https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg">
+      </div>
+      <div class="position-absolute top-50 start-0 translate-middle-y">
+        <h2>PLATAFORMA IGUIDE</h2>
+        <h4>Tenha as Melhores analises de ações em uma únida plataforma</h4>
+      </div>
+      <div class="position-absolute bottom-0 start-50 mb-5">
+        <span class="fa fa-chevron-down"></span>
+      </div>
     </div>
-  </main>
 
-  <!-- Conteudo -->
-  <div class="bg-primary">
-    <section class="bg-success p-4 ">
+    <section id="sectionAbout" class="bg-danger">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-4 text-center">
-            <h2>Sobre nós</h1>
+        <div class="text-center">
+          <h2>Sobre nós</h1>
+        </div>
+        <div class="text-justify">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="sectionPlatform">
+      <div id="carouselPlatform" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselPlatform" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselPlatform" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselPlatform" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
           </div>
-          <div class="col-sm-8 text-justify">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book.
-            </p>
+          <div class="carousel-item">
+            <img src="https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselPlatform" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselPlatform" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- Section about highlights -->
+    <section id="sectionHighlights">
+      <div class="container">
+        <h2>Destasques</h2>
+        <div class="row align-items-center mt-2">
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-1</label>
+          </div>
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-2</label>
+          </div>
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-3</label>
+          </div>
+        </div>
+        <div class="row align-items-center mt-2">
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-4</label>  
+          </div>
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-5</label>
+          </div>
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-6</label>
+          </div>
+        </div>
+        <div class="row align-items-center mt-2 mb-2">
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-7</label>
+          </div>
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-8</label>
+          </div>
+          <div class="col-sm">
+            <span class="fa fa-code"></span>
+            <label>Col-9</label>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-warning">
-      Section 2
-    </section>
-    <section class="bg-success">
-      Section 3
-    </section>
+      <!-- Section Subscriber -->
+  <section id="sectionInterest" class="bg-secondary">
+    <div class="container">
+      <h2>Tenho Interesse</h2>
+      <form class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="validationName">Nome</label>
+          <input type="text" class="form-control" id="validationName" placeholder="seu nome completo" required>
+          <div class="valid-feedback">
+            OK!
+          </div>
+          <div class="invalid-feedback">
+            Insira seu nome
+          </div>
+        </div>
 
-    <!-- Section Subscriber -->
-    <section class="bg-secondary">
-      <div class="container">
-        <form class="needs-validation" novalidate>
-          <div class="form-group">
-            <label for="validationName">Nome</label>
-            <input type="text" class="form-control" id="validationName" placeholder="seu nome completo" required>
+        <div class="form-group">
+          <label for="validationEmail">E-mail</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input class="form-control" type="email" id="validationEmail" name="email"
+              placeholder="seuemail@dominio.com" required>
             <div class="valid-feedback">
               OK!
             </div>
             <div class="invalid-feedback">
-              Insira seu nome
+              Insira seu e-mail
             </div>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="validationEmail">E-mail</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">@</span>
-              </div>
-              <input class="form-control" type="email" id="validationEmail" name="email"
-                placeholder="seuemail@dominio.com" required>
-              <div class="valid-feedback">
-                OK!
-              </div>
-              <div class="invalid-feedback">
-                Insira seu e-mail
-              </div>
-            </div>
+        <div class="custom-control custom-radio">
+          <input class="custom-control-input" type="radio" id="validationOpnionLike" name="opnion" required>
+          <label class="custom-control-label" for="validationOpnionLike">Gostou</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input class="custom-control-input" type="radio" id="validationOpnionDislike" name="opnion" required>
+          <label class="custom-control-label" for="validationOpnionDislike">Não Gostou</label>
+          <div class="valid-feedback">
+            OK!
           </div>
-
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" type="radio" id="validationOpnionLike" name="opnion" required>
-            <label class="custom-control-label" for="validationOpnionLike">Gostou</label>
+          <div class="invalid-feedback">
+            Deixe sua opnião!
           </div>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" type="radio" id="validationOpnionDislike" name="opnion" required>
-            <label class="custom-control-label" for="validationOpnionDislike">Não Gostou</label>
-            <div class="valid-feedback">
-              OK!
-            </div>
-            <div class="invalid-feedback">
-              Deixe sua opnião!
-            </div>
-          </div>
-          <div>
-            <label>Deixe aqui seus comentários</label>
-            <textarea class="form-control" type="text" multiple name="comments"></textarea>
-          </div>
-          <button class="btn btn-sm btn-success mt-2" type="submit">Inscrever-se</button>
-        </form>
-      </div>
-    </section>
-  </div>
-
+        </div>
+        <div>
+          <label>Deixe aqui seus comentários</label>
+          <textarea class="form-control" type="text" multiple name="comments"></textarea>
+        </div>
+        <button class="btn btn-sm btn-success mt-2" type="submit">Inscrever-se</button>
+      </form>
+    </div>
+  </section>
+  </main>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="./assets/js/jquery.min.js"></script>
