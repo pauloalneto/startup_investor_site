@@ -1,3 +1,6 @@
+/*
+Function: Fixed top menu and add class or remove class when scrolling
+*/
 $(window).scroll(function(){
     if ($(this).scrollTop() > 60){
         $('header').addClass('header-fixed-in shadow-sm').removeClass('header-fixed-out');
